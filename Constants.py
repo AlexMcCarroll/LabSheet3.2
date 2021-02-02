@@ -16,6 +16,18 @@ table_created = "Table created successfully"
 table_exists = "This table is already created"
 update = "Update to: "
 
+# Menu options
+menu_header = "\n Menu \n **********"
+menu_create_table = " 1. Create table EmployeeUoB"
+menu_insert = " 2. Insert Employee data into table EmployeeUoB"
+menu_show_all = " 3. Show all data in table EmployeeUoB"
+menu_search = " 4. Search an employee by EmployeeID"
+menu_update = " 5. Update Employee data by EmployeeID"
+menu_delete = " 6. Delete Employee data by EmployeeID"
+menu_delete_all = " 7. Delete all Employee data from table EmployeeUoB"
+menu_exit = " 8. Exit\n"
+menu_enter_choice = "Enter your choice: "
+
 # SQL Commands
 sql_drop_table = '''DROP TABLE EmployeeUoB'''
 sql_create_table = '''CREATE TABLE EmployeeUoB (

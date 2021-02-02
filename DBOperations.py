@@ -3,8 +3,6 @@ import pandas as pd
 import Constants as constants
 from Employee import Employee
 
-# Define DBOperation class to manage all data into the database. 
-# Give a name of your choice to the database
 class DBOperations:
  
   def __init__(self):
@@ -62,12 +60,11 @@ class DBOperations:
     finally:
       self.conn.close()
     
-  # Search for data //TODO
+  # Search for data
   def search_data(self):
     try:
       self.get_connection()
       __choose_user = int(input(constants.enter_id))
-      print(self.find_record(__choose_user))
       result = self.find_record(__choose_user)
       if type(result) == type(tuple()):
         for index, detail in enumerate(result):
@@ -85,7 +82,6 @@ class DBOperations:
             print("Salary: "+ str(detail))
       else:
         print ("No Record")
-            
     except Exception as e:
       print(e)
     finally:

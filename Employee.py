@@ -1,17 +1,14 @@
 class Employee:
   def __init__(self):
-    self._employeeID = 0
+    self.employeeID = 0
     self.empTitle = ''
     self.forename = ''
     self.surname = ''
     self.email = ''
     self.salary = 0
 
-  def get_employee_id(self):
-    return self._employeeID
-
-  def set_employee_id(self, value):
-    self._employeeID = value
+  def set_employee_id(self, employeeID):
+    self.employeeID = employeeID
 
   def set_employee_title(self, empTitle):
     self.empTitle = empTitle
@@ -28,8 +25,8 @@ class Employee:
   def set_salary(self,salary):
     self.salary = salary
   
-  # def get_employee_id(self):
-  #   return self.employeeId
+  def get_employee_id(self):
+    return self.employeeID
 
   def get_employee_title(self):
     return self.empTitle
